@@ -20,4 +20,4 @@
 |  方法   |   注释  |
 | --- | --- |
 |string2File()  |    string到本地文件的转换|
-|addString2File  |(追加) string到本地文件|
+|addString2File()  |(追加) string到本地文件|
