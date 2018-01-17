@@ -39,7 +39,6 @@ public class PropertiesUtil {
 		
 	}
 	/**
-	 * 测试未成功
 	 * 增加/更新一个键值对
 	 * 如果原文件中有该属性，修改；反之添加该属性
 	 * @param path
