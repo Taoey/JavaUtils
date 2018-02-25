@@ -13,12 +13,37 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+  
   <dependencies>
+  <!-- Junit -->
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
+		 <groupId>junit</groupId>
+		 <artifactId>junit</artifactId>
+		 <version>4.12</version>
     </dependency>
+  <!-- dom4j  -->
+  <dependency>
+	    <groupId>org.dom4j</groupId>
+		<artifactId>dom4j</artifactId>
+		<version>2.1.0</version>
+  </dependency>
+  <dependency>
+		  <groupId>jaxen</groupId>
+		  <artifactId>jaxen</artifactId>
+		  <version>1.1.6</version>
+  </dependency>  
   </dependencies>
+  <build>
+    <finalName>JavaUtils</finalName>
+	    <plugins>  
+			<plugin>  
+				<groupId>org.apache.maven.plugins</groupId>  
+				<artifactId>maven-compiler-plugin</artifactId>  
+				<configuration>  
+				<source>1.8</source>  
+				<target>1.8</target>  
+				</configuration>  
+			</plugin>  
+		</plugins>   
+  </build>  
 </project>
