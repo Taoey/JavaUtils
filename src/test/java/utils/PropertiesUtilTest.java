@@ -10,20 +10,22 @@ import java.io.IOException;
 
 import org.junit.Test;
 
+import util.PropertiesUtil;
+
 public class PropertiesUtilTest {
 	
 	@Test
 	public void getProperty() throws IOException {
 		String path = PropertiesUtil.class.getClassLoader().getResource("config.properties").getPath();
 		System.out.println(path);
-		String property = utils.PropertiesUtil.getProperty(path,"sex");
+		String property = util.PropertiesUtil.getProperty(path,"sex");
 		System.out.println(property);
 	}
 	@Test
 	public void addProperty() throws IOException {
 		String path = PropertiesUtil.class.getClassLoader().getResource("config.properties").getPath();
-		utils.PropertiesUtil.setProperty(path, "sex", "1");
-		utils.PropertiesUtil.setProperty(path, "hair", "3");
+		util.PropertiesUtil.setProperty(path, "sex", "1");
+		util.PropertiesUtil.setProperty(path, "hair", "3");
 	}
 
 }
