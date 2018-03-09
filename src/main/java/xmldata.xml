@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+	<user>
+		<name>Taoey</name>
+		<sex>male</sex>
+	</user>
+	
+	<mysql>
+		<dbName>taoey_db</dbName>
+		<password>123456</password>
+	</mysql>
+
+</conf>
+
+
+

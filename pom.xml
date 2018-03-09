@@ -21,6 +21,7 @@
 		 <artifactId>junit</artifactId>
 		 <version>4.12</version>
     </dependency>
+    
   <!-- dom4j  -->
   <dependency>
 	    <groupId>org.dom4j</groupId>
@@ -31,7 +32,10 @@
 		  <groupId>jaxen</groupId>
 		  <artifactId>jaxen</artifactId>
 		  <version>1.1.6</version>
-  </dependency>  
+  </dependency>
+  
+  <!-- other -->
+  
   </dependencies>
   <build>
     <finalName>JavaUtils</finalName>
