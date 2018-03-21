@@ -64,7 +64,21 @@ public class RegexUtilTest {
 		}		
 	}
 
-	
+	/**
+	 * 取出a标签中的内容
+	 */
+	@Test
+	public void test4() {
+		String reg = "<a.*?>(.*?)</a>";
+		String source = "<html><a href='http://www.***.com'>a1中的内容</a><a>a2中的内容</a></html>";
+		Matcher m = Pattern.compile(reg).matcher(source);
+		
+		while(m.find()) {
+			String result = m.group(1);
+			System.out.println(result);
+		}
+		
+	}	
 	
 	
 	
