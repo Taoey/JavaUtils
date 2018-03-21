@@ -48,6 +48,21 @@ public class RegexUtilTest {
 			System.out.println(result);
 		}
 	}
+	/**
+	 * 找出文本中所有的符合的文本信息
+	 * (找出所有以w开头的单词)
+	 */
+	@Test
+	public void test3() {
+		String reg = "(w[a-z]*?)(,)"; //共三个分组
+		String source = "hello,world,word,worx,ppts,excels";
+		
+		Matcher m = Pattern.compile(reg).matcher(source);
+		while(m.find()) {
+			String result = m.group(1);
+			System.out.println(result+":"+m.start()+" "+m.end());
+		}		
+	}
 
 	
 	
